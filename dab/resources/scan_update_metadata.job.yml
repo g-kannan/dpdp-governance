@@ -1,0 +1,6 @@
+resources:
+  jobs:
+    scan_update_metadata:
+      name: scan_update_metadata
+      queue:
+        enabled: true
