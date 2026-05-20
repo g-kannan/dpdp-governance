@@ -2,5 +2,10 @@ resources:
   jobs:
     scan_update_metadata:
       name: scan_update_metadata
+      tasks:
+        - task_key: scan_and_tag
+          notebook_task:
+            notebook_path: ../src/m1-sensitive_column_classification_and_tagging.ipynb
+            source: WORKSPACE
       queue:
         enabled: true
